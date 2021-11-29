@@ -16,7 +16,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Chrcap\\LdapOauthAuth\\LdapOauthAuthServiceProvider"
+                "Vorgans\\LdapOauthAuth\\LdapOauthAuthServiceProvider"
             ]
         }
     },
