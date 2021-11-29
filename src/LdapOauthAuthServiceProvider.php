@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace vorgans\ldap_oauth_auth;
 
 use Illuminate\Support\ServiceProvider;
 
