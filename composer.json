@@ -1,0 +1,30 @@
+{
+    "name": "vorgans/ldap_oauth_auth",
+    "description": "This extension provides the LDAP or OAUTH login and authentication method.",
+    "require": {
+        "laravel/ui": "4.x-dev",
+        "league/oauth2-client": "dev-master",
+        "php": "^8.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Chrcap\\LdapOauthAuth\\": "packages/vorgans/ldap_oauth_auth/src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Chrcap\\LdapOauthAuth\\LdapOauthAuthServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Christofer Cappeliez",
+            "email": "c.cappeliez@orpea.net"
+        }
+    ],
+    "minimum-stability": "dev"
+}
