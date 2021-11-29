@@ -29,6 +29,6 @@ class LdapOauthAuthServiceProvider extends ServiceProvider
             __DIR__.'/Controllers/Auth' => app_path('Http/Controllers/Auth/Ldap.php'),
             __DIR__.'/Controllers/Auth' => app_path('Http/Controllers/Auth/LoginController.php'),
             __DIR__.'/Controllers/Auth' => app_path('Http/Controllers/Auth/Oauth.php'),
-        ]);
+        ], 'ldap-oauth');
     }
 }
