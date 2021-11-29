@@ -15,7 +15,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "vorgans\\ldap_oauth_auth\\LdapOauthAuthServiceProvider"
+                "vorgans\\ldap_oauth_auth\\LdapOauthAuthServiceProvider",
+                "vorgans\\ldap_oauth_auth\\Console\\InstallPackage"
             ]
         }
     },
