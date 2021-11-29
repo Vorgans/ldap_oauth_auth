@@ -18,6 +18,9 @@ Class LdapOauthInstallPackage extends Command
     public function handle()
     {
         $this->callSilent('vendor:publish', ['--tag' => 'ldap-oauth']);
-        $this->info('The Ldap-Oaut-Auth package was installed successfully.');
+        $this->info('The Ldap-Oaut-Auth package was installed successfully !');
+        $this->newLine(1);
+        $this->info('Please setup connect_settings.php in the config folder.');
+
     }
 }
