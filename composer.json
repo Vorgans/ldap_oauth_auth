@@ -10,7 +10,7 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
-            "Vorgans\\LdapOauthAuth\\": "packages/vorgans/ldap_oauth_auth/src"
+            "vorgans\\ldap_oauth_auth\\": "src"
         }
     },
     "extra": {
