@@ -10,13 +10,13 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
-            "Chrcap\\LdapOauthAuth\\": "packages/vorgans/ldap_oauth_auth/src"
+            "Vorgans\\LdapOauthAuth\\": "packages/vorgans/ldap_oauth_auth/src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "vorgans\\ldap_oauth_auth\\LdapOauthAuthServiceProvider"
+                "vorgans\\ldap_oauth_auth\\src\\LdapOauthAuthServiceProvider"
             ]
         }
     },
