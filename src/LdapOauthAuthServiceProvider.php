@@ -3,6 +3,7 @@
 namespace vorgans\ldap_oauth_auth;
 
 use Illuminate\Support\ServiceProvider;
+use vorgans\ldap_oauth_auth\Console\LdapOauthInstallPackage;
 
 class LdapOauthAuthServiceProvider extends ServiceProvider
 {
@@ -13,7 +14,9 @@ class LdapOauthAuthServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->commands([
+            LdapOauthInstallPackage::class,
+        ]);
     }
 
     /**
