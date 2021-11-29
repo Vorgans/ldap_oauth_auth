@@ -9,14 +9,14 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
+            "App\\": "app/",
             "vorgans\\ldap_oauth_auth\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "vorgans\\ldap_oauth_auth\\LdapOauthAuthServiceProvider",
-                "vorgans\\ldap_oauth_auth\\InstallPackage"
+                "vorgans\\ldap_oauth_auth\\LdapOauthAuthServiceProvider"
             ]
         }
     },
