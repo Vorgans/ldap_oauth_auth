@@ -1,7 +1,7 @@
 # Ldap_Oauth_Auth
 
 
-# Ldap Oauth Auth (Open Authentication SYStem for Ldap and Oauth)
+## Ldap Oauth Auth (Open Authentication SYStem for Ldap and Oauth)
 This extension provides the LDAP or OAUTH login and authentication method.
 
 
