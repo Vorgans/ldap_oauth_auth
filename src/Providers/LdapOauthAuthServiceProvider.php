@@ -1,6 +1,6 @@
 <?php
 
-namespace vorgans\ldap_oauth_auth;
+namespace vorgans\ldap_oauth_auth\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use vorgans\ldap_oauth_auth\Console\LdapOauthInstallPackage;
