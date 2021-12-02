@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\Auth;
 
-use Carbon\Carbon;
 use \App\Models\User;
 use \Illuminate\Http\Request;
 use InvalidArgumentException;
@@ -27,14 +26,6 @@ class LoginController extends Controller
 
     use AuthenticatesUsers;
 
-    protected function credentials(\Illuminate\Http\Request $request)
-    {
-        $credentials = $request->only($this->username(), 'password');
-        $credentials['is_valid'] = 1;
-
-        return $credentials;
-    }
-
     /**
      * Where to redirect users after login.
      *
@@ -52,18 +43,6 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    /**
-     * Launched when user just authenticate
-     */
-    function authenticated(\Illuminate\Http\Request $request, $user)
-    {
-        $user->update([
-            'last_login_at' => Carbon::now()->toDateTimeString()
-        ]);
-
-        session(['lang' => $user->setting('lang')]);
-        session(['site_id' => $user->site_id]);
-    }
 
     /**
      * Attempt to log the user into the application.
