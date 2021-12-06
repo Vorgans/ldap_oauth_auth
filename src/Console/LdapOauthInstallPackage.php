@@ -62,5 +62,6 @@ Class LdapOauthInstallPackage extends Command
         $this->pathFiles['Ldap'] = app_path('Http/Controllers/Auth/Ldap.php');
         $this->pathFiles['LoginController'] = app_path('Http/Controllers/Auth/LoginController.php');
         $this->pathFiles['Oauth'] = app_path('Http/Controllers/Auth/Oauth.php');
+        $this->pathFiles['AbstractProvider'] = base_path('/vendor/league/oauth2-client/src/Provider/AbstractProvider.php');
     }
 }
