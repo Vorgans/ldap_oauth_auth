@@ -17,6 +17,10 @@ Package installation is handled by Composer.
 
 * Now, you can setup connect_settings.php in the config folder
 
+## Update dependencies
+
+This package partly uses league / oauth2-client and overwrites service providers with changes. If you have a dependencies update, please make an `php artisan LdapOauth:install` and replace only the AbstractProvider file.
+
 ## Feedback and Contributions
 
 * Feedback is welcome in the form of pull requests and/or issues.
@@ -26,5 +30,5 @@ Package installation is handled by Composer.
 
 ## Credits
 
-* This code allows you to easily define an ldap or oauth connection. It partly uses the league / oauth2-client package for the oauth connection.
+* This code allows you to easily define an ldap or oauth connection. It partly uses the league/oauth2-client package for the oauth connection.
 
