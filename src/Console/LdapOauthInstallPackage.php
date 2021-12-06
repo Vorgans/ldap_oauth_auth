@@ -100,7 +100,7 @@ Class LdapOauthInstallPackage extends Command
         foreach ($this->pathFiles as $key => $value) {
             if (File::exists($value))
             {
-                if ($this->confirm("The [{$key}.php] file already exists. Do you want to replace it?")) 
+                if ($this->confirm("The [{$key}.php] file already exists. Do you want to replace it ?")) 
                 {
                     File::delete($value);
                 } else {
